@@ -1,6 +1,7 @@
 = string_to_editor
 
-Description goes here.
+Adds an :edit method to strings which send it to the default editor
+(set in ENV['EDITOR']). Mostly for debugging purposes.
 
 == Note on Patches/Pull Requests
  
