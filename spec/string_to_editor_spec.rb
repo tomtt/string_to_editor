@@ -47,14 +47,14 @@ describe "StringToEditor" do
     end
   end
 
-  describe "edit" do
+  describe "view" do
     describe "if no editor command is specified in ENV['EDITOR']" do
       before do
         ENV.delete('EDITOR')
       end
 
       it "should raise an error" do
-        lambda { "breakfast".edit }.should raise_error
+        lambda { "breakfast".view }.should raise_error
       end
     end
 
@@ -66,7 +66,7 @@ describe "StringToEditor" do
       it "should send a string to the edit command in the background" do
         s = "sausage"
         s.should_receive(:system).with('/bin/editor/command /path/to/temp_file &')
-        s.edit
+        s.view
       end
     end
   end

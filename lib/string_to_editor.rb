@@ -9,7 +9,7 @@ module OpenStringInEditor
     end
   end
 
-  def edit
+  def view
     if ENV['EDITOR']
       write_to_tmp_file
       system("#{ENV['EDITOR']} #{@path_of_tmp_file_for_string_to_editor} &")
