@@ -1,6 +1,5 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-require 'tempfile'
 require 'string_to_editor'
 
 describe "StringToEditor" do
