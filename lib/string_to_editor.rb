@@ -14,7 +14,7 @@ module OpenStringInEditor
       write_to_tmp_file
       system("#{ENV['EDITOR']} #{@path_of_tmp_file_for_string_to_editor} &")
     else
-      raise "edit was called for a String, but the EDITOR variable was not set in ENV"
+      raise ":view was called for a String, but the EDITOR variable was not set in ENV"
     end
   end
 end

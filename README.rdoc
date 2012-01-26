@@ -1,7 +1,9 @@
 = string_to_editor
 
-Adds an :edit method to strings which send it to the default editor
-(set in ENV['EDITOR']). Mostly for debugging purposes.
+Adds a :view method to all strings. When called on a string
+it writes its content to a temporary file which is then opened
+in the default editor (set in ENV['EDITOR']). Mostly for
+debugging purposes.
 
 == Note on Patches/Pull Requests
  
